@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="VentaDepartamento, PalermoBuenosAires, InmobiliariaBuenosAires, TuNuevoHogar, ZonaTop">
+     <meta name="keywords" content="Piso de categoria, departamento en venta, Palermo, Buenos Aires, venta Palermo, propiedades en venta CABA, piso de categoría, mas de 4 ambientes, Barrio Norte, departamento luminoso">
+    <title>Colchones</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+  <div class="cabecera">
+    <div class="logo-titulo-carrito">
+      <div class="logo-titulo">
+        <a href="../index.html">  
+          <!--a href="/index.html">-->
+          <img src="../image/logo.png" alt="Logo de la tienda" class="logo">
+        </a>
+        <!-- agregado 17/9/25*****************
+         <a href="../files/usuarios.html" class="boton-registro">Registrarse</a>
+         -->
+      </div>
+      <div class="titulo">
+        <h1>Piso a la venta en Av. Santa Fe - Palermo</h1>
+      </div>
+      
+      <!-- Menú Hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-nav" class="menu-nav">
+     <ul>
+                   <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="./recepcion.html">Recepción</a></li>
+                
+                  <li><a href="./banios.html">Baños</a></li>
+                  <li><a href="./circulacion.html">Circulación</a></li>
+                  <li><a href="./mas_imagenes.html">Mas Imagenes</a></li>
+                   <li><a href="./videos.html">Videos</a></li>
+                  <li><a href="./contactos.html">Contactos</a></li>
+                    
+                    <!-- agregado 17/6/25 
+                    <li><a href="./abm_usuarios.html" class="boton-registro">Administrar Usuarios</a></li>
+                    -->
+                </ul>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+    <main>
+        <div class="banner">
+            <h2> Habitaciones</h2>
+        </div>
+
+        <div class="colchones-grid">
+            <div class="colchon-card">
+                <img src="../image/habitacion_1.jpg" alt="Habitacion 1">
+                <h3>Habitación 1</h3>
+                <p>Sommier color celeste , con esquineros y partas negras. Confort y soporte equilibrado.</p>
+                
+                <!--<a href="./card-producto-sommiers.html" onclick="guardarProducto(event, '../image/sommier1.png', 'Sommier Confort', 'Diseño confortable. Confort y soporte equilibrado.')">Ver Más</a>-->
+            </div>
+            <div class="colchon-card">
+                <img src="../image/habitacion_2.jpg" alt="Habitación 2">
+                <h3>Habitación 2</h3>
+                <p>Sommier color gris claro. Patas negras altas.</p>
+                
+                <!--<a href="./card-producto-sommiers.html" onclick="guardarProducto(event, '../image/sommier2.png', 'Sommier Space', 'Para acompañar a todo tipo de colchón. Confort y soporte equilibrado.')">Ver Más</a>-->
+            </div>
+            <div class="colchon-card">
+                <img src="../image/habitacion_3.jpg" alt="Habitación 3">
+                <h3>Habitación 3 / Escritorio</h3>
+                <p>Sommier color gris en pintas. Esquineros gris. Reforzado.</p>
+                
+                <!--<a href="./card-producto-sommiers.html" onclick="guardarProducto(event, '../image/sommier3.png', 'Sommier Elite', 'Diseñado para colchones de Elite. Confort y soporte equilibrado.')">Ver Más</a>-->
+            </div>
+            <div class="colchon-card">
+                <img src="../image/habitacion4_de_juegos.jpg" alt="Habitacion 4 de juegos">
+                <h3>Habitacion 4 de Juegos</h3>
+                <p>Sommier color marrón, Patas muy cortas. Tecnología para máximo confort.</p>
+               
+                <!--<a href="./card-producto-sommiers.html" onclick="guardarProducto(event, '../image/sommier4.png', 'Sommier Super Elte', 'Belleza y super reforzados. Confort y soporte equilibrado.')">Ver Más</a>-->
+            </div>
+             <div class="colchon-card">
+                <img src="../image/habitacion5.jpg" alt="Habitacion 5">
+                <h3>Habitacion 5</h3>
+                <p>Sommier color marrón, Patas muy cortas. Tecnología para máximo confort.</p>
+               
+                <!--<a href="./card-producto-sommiers.html" onclick="guardarProducto(event, '../image/sommier4.png', 'Sommier Super Elte', 'Belleza y super reforzados. Confort y soporte equilibrado.')">Ver Más</a>-->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       <div class="redes-sociales">
+      <a href="https://www.facebook.com/LeporePropiedades" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/leporeprop" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCclLOUtNIhOYTcJTxVPBrCA/featured" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function guardarProducto(e, imagen, titulo, descripcion) {
+            e.preventDefault(); // Prevenir navegación automática
+            const datos = { imagen, titulo, descripcion };
+            localStorage.setItem('productoSeleccionado', JSON.stringify(datos));
+            window.location.href = './card-producto-sommiers.html';
+        }
+         document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu-nav').classList.toggle('active');
+            });
+     </script>
+</body>
+</html>

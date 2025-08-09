@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="../css/style.css" />
+   <style>
+  .registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  #form-registro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: #50e243;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  #form-registro label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+
+  #form-registro input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #5116f3;
+    border-radius: 4px;
+  }
+
+  #form-registro button {
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #form-registro button:hover {
+    background-color: #a32020;
+  }
+
+  #mensaje {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: green;
+  }
+
+  @media (max-width: 480px) {
+    #form-registro {
+      padding: 1rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="cabecera">
+        <div class="logo-titulo-carrito">
+           <div class="logo-titulo">
+              <a href="https://arielxct.github.io/MiTiendaDeColchones/">
+               <!--<a href="index.html">-->
+       
+              <img src="../image/logo.png" alt="Logo de la tienda" class="logo">
+              </a>
+        
+        <!-- agregado 17/9/25*****************-->
+         <a href="../files/usuarios.html" class="boton-registro">Registrarse</a>
+
+      </div>
+      <div class="titulo">
+        <h1>Tu Tienda de Colchones</h1>
+      </div>
+      <div class="carrito-texto">
+        <a href="../files/carrito.html">
+          <img src="../image/carrito-rojo.png" alt="Carrito de compras" class="carrito">
+        </a>
+      </div>
+      <!-- Menú Hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-nav" class="menu-nav">
+      <ul>
+        
+         <li><a href="https://arielxct.github.io/MiTiendaDeColchones/">Inicio</a></li>
+        <li><a href="./colchones.html">Colchones</a></li>
+        <li><a href="./sommiers.html">Sommiers</a></li>
+        <li><a href="../files/almohadas.html">Almohadas</a></li>
+        <li><a href="../files/accesorios.html">Accesorios</a></li>
+        <li><a href="../files/contactos.html">Contactos</a></li>
+        <li><a href="../files/conversor-moneda.html">Conversor Moneda</a></li>
+        <!-- agegado 17/6/25 -->
+         <li><a href="../files/abm_usuarios.html" class="boton-registro">Administrar Usuarios</a></li>
+
+      </ul>
+    </nav>
+  </div>
+    <h1>Registro de Usuario</h1>
+  </header>
+
+  <main class="registro-container">
+    <form id="form-registro">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required minlength="6" />
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <div id="mensaje"></div>
+  </main>
+
+  <footer>
+    <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank"rel="noopener">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener">Twitter</a>
+        </div>
+        <p>© 2025 Todos los derechos reservados. Tienda de Colchones.</p>
+    
+  </footer>
+
+  <script src="../js/registro.js"></script>
+  <script>
+        
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu-nav').classList.toggle('active');
+            });
+  </script>
+  
+</body>
+</html>

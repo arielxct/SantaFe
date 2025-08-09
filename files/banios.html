@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="VentaDepartamento, PalermoBuenosAires, InmobiliariaBuenosAires, TuNuevoHogar, ZonaTop">
+     <meta name="keywords" content="Piso de categoria, departamento en venta, Palermo, Buenos Aires, venta Palermo, propiedades en venta CABA, piso de categoría, mas de 4 ambientes, Barrio Norte, departamento luminoso">
+    <title>Colchones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo-titulo-carrito">
+                <div class="logo-titulo">
+                    <a href="../index.html">
+                        <img src="../image/logo.png" alt="Logo de la tienda" class="logo">
+                    </a>
+                    <!-- agregado 17/9/25*****************
+                    <a href="../files/usuarios.html" class="boton-registro">Registrarse</a>
+                    -->
+                </div>
+                <div class="titulo">
+                    <h1>Piso a la venta en Av. Santa Fe - Palermo</h1>
+                </div>
+     
+      <!-- Menú Hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-nav" class="menu-nav">
+      <ul>
+         <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./recepcion.html">Recepción</a></li>
+        <li><a href="./habitaciones.html">Habitaciones</a></li>
+       
+        <li><a href="./circulacion.html">Circulación</a></li>
+        <li><a href="./mas_imagenes.html">Mas Imagenes</a></li>
+         <li><a href="./videos.html">Videos</a></li>
+        <li><a href="./contactos.html">Contactos</a></li>
+                    
+                    <!-- agregado 17/6/25 
+                    <li><a href="./abm_usuarios.html" class="boton-registro">Administrar Usuarios</a></li>
+                    -->
+                </ul>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+
+    <main>
+        <div class="banner">
+            <h2>Una vista de los baños y toilette</h2>
+        </div>
+
+        <div class="colchones-grid">
+            <div class="colchon-card">
+                <img src="../image/banio_principal.jpg" alt="Baño Principal">
+                <h3>Baño principal</h3>
+                <p>Un amplio baño</p>
+                
+                <!--<a href="./card-producto-almohadas.html" onclick="guardarProducto(event, '../image/almohada1.webp', 'Almohada Verde Spa', 'Comodidad a super precio. Confort y soporte equilibrado.')">Ver Más</a>-->
+            </div>
+           
+            <div class="colchon-card">
+                <img src="../image/toilette_con_ducha.jpg" alt="Toliette con ducha">
+                <h3>Toilette con ducha</h3>
+                <p>Un comodo toilette con la comodidad de una ducha.</p>
+                
+                <!--<a href="./card-producto-almohadas.html" onclick="guardarProducto(event, '../image/almohada2.webp', 'Almohada Black', 'Diseño de vanguardia. Comodidad para todos')">Ver Más</a>-->
+            </div>
+            <div class="colchon-card">
+                <img src="../image/3er baño. Baño de servicio.PNG" alt="Baño de servicio">
+                <h3>Baño de servicio</h3>
+                <p>Baño de servicio. el 3er baño de la planta</p>
+              
+                <!--<a href="./card-producto-almohadas.html" onclick="guardarProducto(event, '../image/almohada3.webp', 'Almohada Elmo', 'La almohada que estaba necesitando. Soporte equilibrado.')">Ver Más</a>-->
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+       <div class="redes-sociales">
+      <a href="https://www.facebook.com/LeporePropiedades" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/leporeprop" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCclLOUtNIhOYTcJTxVPBrCA/featured" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function guardarProducto(e, imagen, titulo, descripcion) {
+            e.preventDefault(); // Prevenir navegación automática
+            const datos = { imagen, titulo, descripcion };
+            localStorage.setItem('productoSeleccionado', JSON.stringify(datos));
+            window.location.href = './card-producto-almohadas.html';
+        }
+         document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu-nav').classList.toggle('active');
+            });
+     </script>
+</body>
+</html>

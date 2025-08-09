@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="VentaDepartamento, PalermoBuenosAires, InmobiliariaBuenosAires, TuNuevoHogar, ZonaTop">
+     <meta name="keywords" content="Piso de categoria, departamento en venta, Palermo, Buenos Aires, venta Palermo, propiedades en venta CABA, piso de categoría, mas de 4 ambientes, Barrio Norte, departamento luminoso">
+    <title>Colchones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo-titulo-carrito">
+                <div class="logo-titulo">
+                    <a href="../index.html">
+                        <img src="../image/logo.png" alt="Logo de la tienda" class="logo">
+                    </a>
+                    <!-- agregado 17/9/25*****************
+                    <a href="../files/usuarios.html" class="boton-registro">Registrarse</a>
+                    -->
+                </div>
+                <div class="titulo">
+                    <h1>Piso a la venta en Av. Santa Fe - Palermo</h1>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            </div>
+            <nav id="menu-nav" class="menu-nav">
+                <ul>
+                     <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./recepcion.html">Recepción</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./banios.html">Baños</a></li>
+                    <li><a href="./circulacion.html">Circulación</a></li>
+                  
+                     <li><a href="./videos.html">Videos</a></li>
+                    <li><a href="./contactos.html">Contactos</a></li>
+                    
+                    <!-- agregado 17/6/25 
+                    <li><a href="./abm_usuarios.html" class="boton-registro">Administrar Usuarios</a></li>
+                    -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <h2>Mas imagenes de diferentes sectores</h2>
+        </div>
+
+        <div class="colchones-grid">
+            <div class="colchon-card">
+                <img src="../image/Vista de Av Santa Fe.PNG" alt="Vista">
+                <h3>Vista de Av. Santa Fe</h3>
+                <p>Desde los balcones</p>
+                
+                
+            </div>
+            <div class="colchon-card">
+                <img src="../image/Vista de calle Billinghurst y Av. Santa Fe.PNG" alt="Vista de calle Billinghurst y Av. Santa Fe">
+                <h3>Vista de Av. Santa Fe</h3>
+                <p>Desde los balcones</p>
+                
+            </div>
+            <div class="colchon-card">
+                <img src="../image/Hall de ingreso al edificio.PNG" alt="Hall de ingreso al edificio">
+                <h3>Hall de ingresso del edificio</h3>
+                <p>Entrada de categoria</p>
+                
+                
+            </div>
+            <div class="colchon-card">
+                <img src="../image/Puertas de Ingreso.PNG" alt="Puertas de ingreso">
+                <h3>Puertas de ingreso</h3>
+                <p>Puerta de ingreso principal de doble hoja, y puerta de servicio</p>
+                
+            </div>
+            <div class="colchon-card">
+                <img src="../image/jardin_de_invierno.jpg" alt="Jardín de invierno">
+                <h3>Jardín de invierno</h3>
+                <p>Muy bien iluminado</p>
+                
+                
+            </div>
+             <div class="colchon-card">
+                <img src="../image/Salida a jardin del fondo y habitaciones de servicio.PNG" alt="Salida a jardín del fondo y habitaciones de servicio">
+                <h3>Salida a zona de habitaciones de servicio </h3>
+                <p>Muy bien iluminado, da al centro de manzana.</p>
+            </div>
+                
+            <div class="colchon-card">
+                <img src="../image/1era Habitacion de Servicio.PNG" alt="1era Habitacion de Servicio">
+                <h3>1era Habitacion de Servicio</h3>
+                <p>Amplia y comoda</p>
+                
+                
+            </div>
+            <div class="colchon-card">
+                <img src="../image/2da Habitacion de Servicio o alacena.PNG" alt="2da Habitacion de Servicio o alacena">
+                <h3>2da Habitacion de Servicio o alacena</h3>
+                <p>Muy bien iluminado</p>
+                
+            </div>
+             <div class="colchon-card">
+                <img src="../image/Jardin del fondo.PNG" alt="Jardín del fondo">
+                <h3>Jardin de fondo y zona de servicio</h3>
+                <p>Muy bien iluminado da al pulmon de manzana</p>
+             </div>   
+                
+        </div>
+    </main>
+
+    <footer>
+       <div class="redes-sociales">
+      <a href="https://www.facebook.com/LeporePropiedades" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/leporeprop" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCclLOUtNIhOYTcJTxVPBrCA/featured" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function guardarProducto(e, imagen, titulo, descripcion) {
+            e.preventDefault(); // Prevenir navegación automática
+            const datos = { imagen, titulo, descripcion };
+            localStorage.setItem('productoSeleccionado', JSON.stringify(datos));
+            window.location.href = './card-producto-accesorios.html';
+        }
+         document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu-nav').classList.toggle('active');
+            });
+     </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="VentaDepartamento, PalermoBuenosAires, InmobiliariaBuenosAires, TuNuevoHogar, ZonaTop">
+     <meta name="keywords" content="Piso de categoria, departamento en venta, Palermo, Buenos Aires, venta Palermo, propiedades en venta CABA, piso de categoría, mas de 4 ambientes, Barrio Norte, departamento luminoso">
+  <title>Contactos</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="cabecera">
+      <div class="logo-titulo-carrito">
+        <div class="logo-titulo">
+          <a href="../index.html">
+            <img src="../image/logo.png" alt="Logo de la tienda" class="logo"/>
+          </a>
+          <!-- agregado 17/9/25*****************
+         <a href="../files/usuarios.html" class="boton-registro">Registrarse</a>
+         -->
+        </div>
+        <div class="titulo">
+          <h1>Piso a la venta en Av. Santa Fe - Palermo</h1>
+        </div>
+        
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      </div>
+
+      <nav id="menu-nav" class="menu-nav">
+        <ul>
+                   <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./recepcion.html">Recepción</a></li>
+        <li><a href="./habitaciones.html">Habitaciones</a></li>
+        <li><a href="./banios.html">Baños</a></li>
+        <li><a href="./circulacion.html">Circulación</a></li>
+        <li><a href="./mas_imagenes.html">Mas Imagenes</a></li>
+         <li><a href="./videos.html">Videos</a></li>
+        
+                    
+                    
+                    <!-- agregado 17/6/25 
+                    <li><a href="./abm_usuarios.html" class="boton-registro">Administrar Usuarios</a></li>
+                    -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-contacto">
+    <div class="banner_contacto">
+      <h2>Contáctanos</h2>
+    </div>
+          <div class="datos_contactos">
+                <h3>INMOBILIARIA LEPORE</h3>
+                <p>Para consultas, reservas o más información, no dudes en contactarnos.</p>
+                
+                <h3>Dirección</h3>
+                <p>Av. Las Heras 2406</p>
+                <h3>Email</h3>
+                <p>barrionorte@lepore.com.ar</p>
+                <h3>Teléfonos</h3>
+                <p>4805-5050  /  11-4169-3982  /  0810 666 1010</p>
+                
+                <!--
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes: 9:00 a 18:00</p>
+                <p>Sábados: 9:00 a 13:00</p>
+                -->
+              </div>
+
+                
+<!--
+    <div class="formulario-contacto">
+      <h3>Formulario de Contacto</h3>
+
+      <form id="form-contacto" action="https://formspree.io/f/meoapyov" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="500" placeholder="Escriba al menos 10 caracteres..."></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+
+    <div class="informacion-contacto">
+      <h3>Mapa de nuestra ubicación</h3>
+    </div>
+-->
+    <div class="mapa-ubicacion">
+      
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1936.2473371494023!2d-58.41038823416071!3d-34.58964598510505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca838224f24b%3A0x45ae50d0e33270a2!2sAvenida%20Santa%20Fe%20%26%20S%C3%A1nchez%20de%20Bustamante%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1754602296883!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/LeporePropiedades" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/leporeprop" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCclLOUtNIhOYTcJTxVPBrCA/featured" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© 2025 Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('menu-nav').classList.toggle('active');
+    });
+
+    // Validación personalizada JS
+    document.getElementById('form-contacto').addEventListener('submit', function (e) {
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      if (nombre.length < 3 || mensaje.length < 10) {
+        alert("Por favor, completá todos los campos correctamente.");
+        e.preventDefault(); // Evita el envío si falla
+      }
+    });
+  </script>
+</body>
+</html>

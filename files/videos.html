@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="VentaDepartamento, PalermoBuenosAires, InmobiliariaBuenosAires, TuNuevoHogar, ZonaTop">
+     <meta name="keywords" content="Piso de categoria, departamento en venta, Palermo, Buenos Aires, venta Palermo, propiedades en venta CABA, piso de categoría, mas de 4 ambientes, Barrio Norte, departamento luminoso">
+    <title>Colchones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo-titulo-carrito">
+                <div class="logo-titulo">
+                    <a href="../index.html">
+                        <img src="../image/logo.png" alt="Logo de la tienda" class="logo">
+                    </a>
+                    <!-- agregado 17/9/25*****************
+                    <a href="../files/usuarios.html" class="boton-registro">Registrarse</a>
+                    -->
+                </div>
+                <div class="titulo">
+                    <h1>Piso a la venta en Av. Santa Fe - Palermo</h1>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            </div>
+            <nav id="menu-nav" class="menu-nav">
+                <ul>
+                     <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./recepcion.html">Recepción</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./banios.html">Baños</a></li>
+                    <li><a href="./circulacion.html">Circulación</a></li>
+                    <li><a href="./mas_imagenes.html">Mas Imagenes</a></li>
+                    <li><a href="./contactos.html">Contactos</a></li>
+                    
+                    <!-- agregado 17/6/25 
+                    <li><a href="./abm_usuarios.html" class="boton-registro">Administrar Usuarios</a></li>
+                    -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <h2>Videos de las diferentes areas del piso.</h2>
+        </div>
+
+        <div class="videos-grid">
+            <div class="video-card">
+               <!-- <iframe width="560" height="315" src="../Image/recepcion.mp4" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope ;picture-in-picture; web-share" allowfullscreen></iframe>
+                <video src="../Image/recepcion.mp4" controls autoplay muted loop>--> 
+                 <video width="560" height="315" controls poster="../Image/portada.PNG">
+                    <source src="../Image/recepcion.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                    </video>
+                <h3>Recorrido Virtual por la recepción del piso de Av. Santa Fe</h3>
+                <p>Living, comedor, sala de musica y estar</p>
+            </div>
+            <div class="video-card">
+                 <video width="560" height="315" controls poster="../Image/portada2.PNG">
+                    <source src="../Image/piso1.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                    </video>
+                
+                
+                <h3>Tour por Palermo: Descubre el Barrio</h3>
+                <p>Explora las atracciones y la vida en el barrio de Palermo, donde se encuentra el departamento.</p>
+            </div>
+            <div class="video-card">
+                 <video width="560" height="315" controls poster="../Image/portada3.PNG">
+                    <source src="../Image/piso2.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                    </video>
+                
+                <h3>Consejos para Comprar tu Primer Departamento</h3>
+                <p>Guía práctica para quienes buscan adquirir su primer inmueble en Buenos Aires.</p>
+            </div>
+            
+                
+            
+            
+        </div>   
+    </main>
+
+    <footer>
+       <div class="redes-sociales">
+      <a href="https://www.facebook.com/LeporePropiedades" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/leporeprop" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCclLOUtNIhOYTcJTxVPBrCA/featured" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function guardarProducto(e, imagen, titulo, descripcion) {
+            e.preventDefault(); // Prevenir navegación automática
+            const datos = { imagen, titulo, descripcion };
+            localStorage.setItem('productoSeleccionado', JSON.stringify(datos));
+            window.location.href = './card-producto-accesorios.html';
+        }
+         document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu-nav').classList.toggle('active');
+            });
+     </script>
+</body>
+</html>
