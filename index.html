@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Roboto&display=swap" rel="stylesheet">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <!-- Datos estructurados para SEO -->
   <script type="application/ld+json">
   {
@@ -48,6 +51,7 @@
             <img src="./image/logo.png" alt="Logo de la inmobiliaria Lepore" class="logo">
           </a>
         </div>
+        <div id="top"></div>
         <div class="titulo">
           <h1>Piso a la venta en Av. Santa Fe - Palermo</h1>
         </div>
@@ -94,8 +98,27 @@
 
     <section class="producto-destacado">
       <p>Un piso muy amplio desde la Av. Santa Fe hasta el pulmón de manzana.</p>
-      <a href="./image/PLANTA SANTA FE 3110.pdf" class="btn-destacado" target="_blank" rel="noopener">📄 Ver plano en PDF</a>
+      <a href="./image/PLANTA SANTA FE.pdf" class="btn-destacado" target="_blank" rel="noopener">📄 Ver plano en PDF</a>
     </section>
+
+    <section class="galeria-carrusel">
+      <h2>Galería del piso - Recepción</h2>
+      <div class="swiper">
+       
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./image/galeria1.webp" alt="Vista de la Sala de Musica"></div>
+          <div class="swiper-slide"><img src="./image/galeria2.webp" alt="Vista del living"></div>
+          <div class="swiper-slide"><img src="./image/galeria3.webp" alt="Vista del comedor y el mueble estilo XV desde el living"></div>
+          <div class="swiper-slide"><img src="./image/galeria4.webp" alt="Vista del living"></div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <div></div>
+        <a href="#top" class="btn-volver">🔝 Volver arriba</a> 
   </main>
 
   <footer>
@@ -106,9 +129,30 @@
     </div>
   </footer>
 
+  <!-- Menú responsive -->
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
       document.getElementById('menu-nav').classList.toggle('active');
+    });
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
     });
   </script>
 </body>

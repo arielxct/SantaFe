@@ -403,6 +403,75 @@ footer {
     display: none;
   }
 }
+/* --------------- Carrusel ------------------ */
+/* Sección del carrusel */
+.galeria-carrusel {
+  padding: 40px 20px;
+  background-color: #f8f5f0;
+  text-align: center;
+}
+
+.galeria-carrusel h2 {
+  font-family: 'Amarante', cursive;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4a3f35;
+}
+
+/* Swiper contenedor */
+.swiper {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+/* Slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 500px; /* Ajustá este valor según tu preferencia */
+
+
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.02);
+}
+
+/* Botones de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4a3f35;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Paginación */
+.swiper-pagination-bullet {
+  background-color: #4a3f35;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
 
 /* --------------- Grid Articulos ------------------ */
 .colchones-grid {
