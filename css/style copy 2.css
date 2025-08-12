@@ -377,32 +377,6 @@ footer {
     color: #afeb55;
     margin: 0;
 }
-/* --------------- Boton Volver en cada pagina ------------------ */
-.btn-volver {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #28a745; /* Verde */
-  color: white;
-  padding: 10px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 16px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-}
-
-.btn-volver:hover {
-  background-color: #218838;
-}
-
-/* Mostrar solo en pantallas pequeñas */
-@media (min-width: 768px) {
-  .btn-volver {
-    display: none;
-  }
-}
 
 /* --------------- Grid Articulos ------------------ */
 .colchones-grid {
