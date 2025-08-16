@@ -448,6 +448,31 @@ footer {
   transform: scale(1.02);
 }
 
+
+/* --------------- VIDEO CARD ------------------ */
+.video-card {
+    max-width: 360px; /* Igual al ancho máximo del video */
+    text-align: center;
+    margin: 0 auto; /* Centra la tarjeta en la página */
+}
+
+.video-card video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 8px;
+}
+
+.video-card h3,
+.video-card p {
+    max-width: 100%; /* Que no se pase del ancho del video */
+    margin: 10px auto 0; /* Espacio arriba y centrado */
+}
+
+.video-card p {
+    margin-top: 5px;
+}
+
+/* --------------- fIN DE vIDEO cARD------------------ */
 /* Botones de navegación */
 .swiper-button-next,
 .swiper-button-prev {
@@ -532,6 +557,50 @@ footer {
     background-color: #ff6600;
     /* background-color: #cc5200;*/
 }
+/* ---------------  Grid videos ------------------ */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.video-card {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden; /* asegura que nada sobresalga al hacer zoom */
+}
+
+.video-card video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.video-card h3,
+.video-card p {
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+/* 🎨 Efecto hover */
+.video-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.video-card:hover video {
+    transform: scale(1.05);
+}
+
+
+/* --------------- Fin de GRid videos ------------------------------ */
 
 /*------------------ESTILO PARA LAS CARD PRODUCTOS ------------------------------*/
 
